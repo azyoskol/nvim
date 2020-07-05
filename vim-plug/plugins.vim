@@ -57,7 +57,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Themes
   " Plug 'christianchiarulli/onedark.vim'
   Plug 'gruvbox-community/gruvbox'
-  Plug 'sainnhe/gruvbox-materia'
+  Plug 'sainnhe/gruvbox-material'
   " Plug 'tomasiser/vim-code-dark'
 
   " Intellisense
@@ -116,6 +116,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Vim Wiki
   " Plug 'https://github.com/vimwiki/vimwiki.git'
+
+  " Languages
+  " Javascript
+	Plug 'pangloss/vim-javascript'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'peitalin/vim-jsx-typescript'
+	Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+	Plug 'jparise/vim-graphql'
 
 call plug#end()
 
