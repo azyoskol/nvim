@@ -47,6 +47,8 @@ telescope.setup({
 			mappings = {
 				-- your custom insert mode mappings
 				["i"] = {
+					["<C-t>"] = actions.select_tab,
+					["<C-.>"] = fb_actions.change_cwd,
 					["<C-w>"] = function()
 						vim.cmd("normal vbd")
 					end,
@@ -55,9 +57,11 @@ telescope.setup({
 					-- your custom normal mode mappings
 					["N"] = fb_actions.create,
 					["h"] = fb_actions.goto_parent_dir,
+					["."] = fb_actions.change_cwd,
 					["/"] = function()
 						vim.cmd("startinsert")
 					end,
+					["t"] = actions.select_tab,
 				},
 			},
 		},
