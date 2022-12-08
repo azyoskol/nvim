@@ -6,7 +6,6 @@ end
 saga.init_lsp_saga({
 	server_filetype_map = {
 		typescript = "typescript",
-		javasctipt = "javasctipt",
 	},
 	finder_request_timeout = 3500,
 	code_action_keys = {
@@ -23,6 +22,7 @@ vim.keymap.set("i", "<leader>ls", "<Cmd>Lspsaga signature_help<CR>", opts)
 vim.keymap.set("n", "gp", "<Cmd>Lspsaga preview_definition<CR>", opts)
 vim.keymap.set("n", "<leader>lr", "<Cmd>Lspsaga rename<CR>", opts)
 vim.keymap.set("n", "<leader>la", "<Cmd>Lspsaga code_action<CR>", opts)
+vim.keymap.set("n", "<leader>ld", "<Cmd>Lspsaga show_cursor_diagnostics<CR>", opts)
 -- vim.keymap.set("n", "<leader>tf", "<Cmd>Lspsaga open_floaterm<CR>", opts)
 -- vim.keymap.set("n", "<leader>tl", "<Cmd>Lspsaga open_floaterm lazygit<CR>", opts)
 -- close floaterm

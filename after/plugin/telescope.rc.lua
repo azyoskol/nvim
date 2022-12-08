@@ -9,7 +9,7 @@ local function telescope_buffer_dir()
 	return vim.fn.expand("%:p:h")
 end
 
-local fb_actions = require("telescope").extensions.file_browser.actions
+local fb_actions = telescope.extensions.file_browser.actions
 
 telescope.setup({
 	defaults = {
@@ -109,4 +109,10 @@ vim.keymap.set("n", "<leader>fp", function()
 	telescope.extensions.project.project({
 		theme = "dropdown",
 	})
+end)
+vim.keymap.set("n", "<leader>lm", function()
+	telescope.extensions.flutter.commands()
+end)
+vim.keymap.set("n", "<leader>lmv", function()
+	telescope.extensions.flutter.fvm()
 end)

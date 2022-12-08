@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/git.nvim",
@@ -173,6 +178,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
