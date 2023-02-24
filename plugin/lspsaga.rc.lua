@@ -1,17 +1,17 @@
 local status, saga = pcall(require, "lspsaga")
 if not status then
-	return
+  return
 end
 
-saga.init_lsp_saga({
-	server_filetype_map = {
-		typescript = "typescript",
-	},
-	finder_request_timeout = 3500,
-	code_action_keys = {
-		quit = "<Esc>",
-		exec = "<CR>",
-	},
+saga.setup({
+  server_filetype_map = {
+    typescript = "typescript",
+  },
+  finder_request_timeout = 3500,
+  code_action_keys = {
+    quit = "<Esc>",
+    exec = "<CR>",
+  },
 })
 
 local opts = { noremap = true, silent = true }

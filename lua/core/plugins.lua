@@ -55,9 +55,7 @@ packer.startup(function(use)
 		"akinsho/flutter-tools.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 	})
+	use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
 	-- Rust crates
-	use({
-		"saecki/crates.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
-	})
+	use("simrat39/rust-tools.nvim")
 end)
