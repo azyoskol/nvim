@@ -14,13 +14,14 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.close(),
     ['<CR>'] = cmp.mapping.confirm({
-      behavior = cmp.ConfirmBehavior.Replace,
+      behavior = cmp.ConfirmBehavior.Insert,
       select = true
     }),
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'buffer' },
+    { name = 'path'},
+    { name = 'nvim_lsp', keyword_length = 1 },
+    { name = 'buffer', keyword_length = 2 },
   }),
   formatting = {
     format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
