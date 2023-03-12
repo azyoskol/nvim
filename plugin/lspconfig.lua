@@ -76,6 +76,11 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --   on_attach = on_attach,
 --   capabilities = capabilities,
 -- })
+nvim_lsp.zls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "zig" },
+})
 
 nvim_lsp.tsserver.setup({
   on_attach = on_attach,

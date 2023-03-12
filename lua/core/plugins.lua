@@ -59,4 +59,7 @@ packer.startup(function(use)
 	use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
 	-- Rust crates
 	use("simrat39/rust-tools.nvim")
+  use("ziglang/zig.vim")
+  use("esensar/nvim-dev-container")
+  use("jamestthompson3/nvim-remote-containers")
 end)
