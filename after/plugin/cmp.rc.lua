@@ -20,8 +20,9 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'path'},
-    { name = 'nvim_lsp', keyword_length = 1 },
-    { name = 'buffer', keyword_length = 2 },
+    { name = 'codeium'},
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
   }),
   formatting = {
     format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })

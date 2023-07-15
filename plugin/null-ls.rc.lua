@@ -11,12 +11,13 @@ null_ls.setup({
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.prettierd.with({ extra_filetypes = { "rmd" } }),
 		null_ls.builtins.formatting.shfmt,
-		null_ls.builtins.formatting.eslint_d,
+		null_ls.builtins.formatting.eslint,
+    null_ls.builtins.formatting.zigfmt,
 		null_ls.builtins.diagnostics.cue_fmt,
 		null_ls.builtins.diagnostics.shellcheck,
-		null_ls.builtins.diagnostics.eslint_d.with({
-			diagnostics_format = "[eslint] #{m}\n(#{c})",
-		}),
+		null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.diagnostics.mypy,
+    null_ls.builtins.diagnostics.ruff,
 	},
 	on_attach = function(client, bufnr)
 		if client.server_capabilities.document_formatting then

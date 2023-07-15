@@ -16,7 +16,7 @@ flutter_tools.setup({
   },
   widget_guides = { enabled = true, debug = true },
   dev_log = { enabled = true, open_cmd = "tabedit" },
-  flutter_path = "/home/zubarev/fvm/default/bin",
+  -- flutter_path = "/home/zubarev/fvm/default/",
   fvm = true,
   lsp = {
     color = {

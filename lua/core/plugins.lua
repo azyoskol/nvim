@@ -14,6 +14,10 @@ packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim") -- Statusline
 	use("nvim-lua/plenary.nvim") -- Common utilities
 	use("onsails/lspkind-nvim") -- vscode-like pictograms
+  use({
+      "jcdickinson/http.nvim",
+      run = "cargo build --workspace --release"
+  })
 	use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
 	use("hrsh7th/cmp-path") -- nvim-cmp source for path words
 	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in LSP
@@ -47,6 +51,16 @@ packer.startup(function(use)
 		end,
 	})
 	use({ "akinsho/nvim-bufferline.lua", tag = "v3.*" })
+  use({ "chrisgrieser/nvim-spider" })
+  -- Codeium
+  use({
+    "jcdickinson/codeium.nvim",
+    requires = {
+        "jcdickinson/http.nvim",
+        "nvim-lua/plenary.nvim",
+        "hrsh7th/nvim-cmp",
+    }
+  })
 	-- use 'github/copilot.vim'
 	use("lewis6991/gitsigns.nvim")
 	use("dinhhuy258/git.nvim") -- For git blame & browse
@@ -59,7 +73,6 @@ packer.startup(function(use)
 	use({ "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } })
 	-- Rust crates
 	use("simrat39/rust-tools.nvim")
-  use("ziglang/zig.vim")
-  use("esensar/nvim-dev-container")
   use("jamestthompson3/nvim-remote-containers")
+  use("andweeb/presence.nvim")
 end)

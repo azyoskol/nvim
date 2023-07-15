@@ -14,7 +14,7 @@ _G._packer.inside_compile = true
 
 local time
 local profile_info
-local should_profile = true
+local should_profile = false
 if should_profile then
   local hrtime = vim.loop.hrtime
   profile_info = {}
@@ -94,6 +94,16 @@ _G.packer_plugins = {
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["codeium.nvim"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/codeium.nvim",
+    url = "https://github.com/jcdickinson/codeium.nvim"
+  },
   ["flutter-tools.nvim"] = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
@@ -113,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim",
     url = "https://github.com/eddyekofo94/gruvbox-flat.nvim"
+  },
+  ["http.nvim"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/http.nvim",
+    url = "https://github.com/jcdickinson/http.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -199,6 +214,16 @@ _G.packer_plugins = {
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-remote-containers"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-remote-containers",
+    url = "https://github.com/jamestthompson3/nvim-remote-containers"
+  },
+  ["nvim-spider"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-spider",
+    url = "https://github.com/chrisgrieser/nvim-spider"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -223,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/zubarev/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,

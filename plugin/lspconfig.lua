@@ -79,7 +79,11 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 nvim_lsp.zls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { "zig" },
+})
+
+nvim_lsp.pylsp.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
 })
 
 nvim_lsp.tsserver.setup({
@@ -89,10 +93,17 @@ nvim_lsp.tsserver.setup({
   capabilities = capabilities,
 })
 
-nvim_lsp.sourcekit.setup({
+nvim_lsp.clangd.setup({
   on_attach = on_attach,
   capabilities = capabilities,
+  cmd = { "clangd" },
+  filetypes = { "c", "cpp" },
 })
+
+-- nvim_lsp.sourcekit.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- })
 
 nvim_lsp.lua_ls.setup({
   capabilities = capabilities,
